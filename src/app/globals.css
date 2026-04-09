@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050a14;
+  --foreground: #e8e1d4;
+  --card: #0c1b3a;
+  --card-muted: #121f3f;
+  --accent: #f5c16c;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-midnight text-beige font-sans antialiased;
+  background-image: radial-gradient(circle at top, rgba(245, 193, 108, 0.12), transparent 45%),
+    linear-gradient(120deg, rgba(12, 27, 58, 0.95), rgba(5, 10, 20, 0.95));
+  min-height: 100vh;
+}
+
+a {
+  @apply text-gold hover:text-white transition-colors;
+}
